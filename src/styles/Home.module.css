@@ -107,25 +107,6 @@
 .logo {
   position: relative;
 }
-/*共通スタイル*/
-.main_title {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.floa-table {
-  width: 100%;
-  border-spacing: 0.5rem;
-}
-
-.monitor {
-  font-size: 1rem;
-  padding: 0.5rem;
-  width: 100%;
-}
-
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -146,15 +127,6 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-
-  .main_title {
-    font-size: 1.5rem;
-    padding: 0.1rem;
-  }
-
-  .main {
-    padding: 2rem;
-  }
   .content {
     padding: 4rem;
   }

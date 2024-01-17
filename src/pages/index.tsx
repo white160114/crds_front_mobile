@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { firestore } from '../styles/firebase'; 
-import styles from '../styles/Home.module.css';
 
 
 const Home = () => {
@@ -23,10 +22,8 @@ const Home = () => {
   useEffect(() => {
       // Firestoreから各フロアの状態を取得する関数
     const fetchData = async () => {
-      // 取得対象のリスト
       const buildings = ['2号館', '3号館'];
 
-      // 初期状態の設定
       const initialStatus: Record<string, { [key: string]: { status: string; buttonColor: string; } }> = {};
 
       buildings.forEach((building) => {
@@ -38,13 +35,11 @@ const Home = () => {
 
       setFloorsStatus(initialStatus);
 
-      // フロアの状態をFirestoreから取得
       buildings.forEach((building) => {
         floors.forEach((floor) => {
           const docRef = doc(firestore, 'statuses', building, 'floors', floor);
           const unsubscribe = onSnapshot(docRef, (docSnapshot) => {
             if (docSnapshot.exists()) {
-              // Firestoreのデータを取得し、ステートを更新
               const data = docSnapshot.data();
               const statusData = {
                 status: data?.status || '',
@@ -60,19 +55,18 @@ const Home = () => {
               }));
             }
           });
-          return unsubscribe; // クリーンアップ関数を返す
+          return unsubscribe;
         });
       });
     };
 
     fetchData();
-  }, []); // 空の依存リストを渡して一度だけ実行
+  }, []);
 
-  // フロアがクリックされた時の処理
   const clickHandler = (building: string, floor: string) => {
     router.push(`/detail?building=${building}&floor=${floor}`);
   };
-  // ステータスに応じたボタンの色を返すユーティリティ関数
+
   const getButtonColor = (status: string) => {
     switch (status) {
       case '利用停止':
@@ -93,8 +87,8 @@ const Home = () => {
       <Head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
       </Head>
-      <h1 className={styles.main_title}>混雑状況</h1>
-      <table className={styles.floa_table}>
+      <h1 className='main_title'>混雑状況</h1>
+      <table className='floa-table'>
         <thead>
           <tr className='place-number'>
             {Object.keys(floorsStatus).map((building) => (
