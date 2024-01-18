@@ -1,0 +1,69 @@
+.main_title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.floa-table {
+    display: block; // デフォルトではブロック要素として振る舞う
+  
+    thead {
+      display: none; // モバイルではヘッダーを非表示にする
+    }
+  
+    tbody {
+      tr {
+        display: block; // 各行をブロック要素として振る舞わせる
+        margin-bottom: 1rem; // 行と行の間にマージンを設ける
+      }
+  
+      td {
+        display: block; // 各セルもブロック要素として振る舞わせる
+        text-align: center; // テキストを中央揃えにする
+      }
+    }
+}
+
+.monitor {
+    width: 100%;
+}
+
+// タブレット向けのスタイル
+@media (min-width: 768px) {
+    .main_title {
+      font-size: 2rem; // タブレット用のフォントサイズ
+    }
+  
+    .floa-table {
+        display: grid; // グリッドシステムを使用する
+        grid-template-columns: repeat(2, 1fr); // 2列のレイアウト
+        gap: 1rem; // 列と行の間にギャップを設ける
+    
+        thead {
+          display: block; // ヘッダーを表示する
+        }
+        tbody {
+            tr {
+              display: contents; // tr要素のデフォルトの振る舞いに戻す
+            }
+      
+            td {
+              display: table-cell; // td要素のデフォルトの振る舞いに戻す
+              text-align: left; // テキストを左揃えにする
+            }
+        }
+    }    
+}
+
+@media (min-width: 1024px) {
+    .main_title {
+      font-size: 2.5rem; // デスクトップ用のフォントサイズ
+    }
+  
+    .floa-table {
+      // 必要に応じてテーブルスタイルを調整
+    }
+  
+    .monitor {
+      // デスクトップ用のボタンスタイル
+    }
+}

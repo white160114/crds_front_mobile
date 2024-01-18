@@ -20,7 +20,7 @@ const Detail = () => {
           <span>{floor}</span>
         </div>
         <div className="image-container">
-          <Image src="/images/crds_person.jpg" alt="Floor Image" width={600} height={400} />
+          <Image src="/images/crds_person.jpg" alt="Floor Image" width={550} height={450} />
         </div>
         <p>かなり混雑しています。</p>
         <footer>
@@ -34,6 +34,7 @@ const Detail = () => {
           text-align: center;
         }
         .main_title {
+          text-align: center;
           margin-top: 20px;
         }
         .building-floor {

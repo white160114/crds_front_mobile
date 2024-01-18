@@ -4,6 +4,8 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { firestore } from '../styles/firebase'; 
+import styles from '../styles/Home.module.scss';
+
 
 
 const Home = () => {
@@ -87,8 +89,8 @@ const Home = () => {
       <Head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
       </Head>
-      <h1 className='main_title'>混雑状況</h1>
-      <table className='floa-table'>
+      <h1 className={styles.main_title}>混雑状況</h1>
+      <table className={styles.floa_table}>
         <thead>
           <tr className='place-number'>
             {Object.keys(floorsStatus).map((building) => (
