@@ -212,7 +212,7 @@ body {
   width: 100%; /* 単位が必要なので % を追加 */
   height: 100%; /* 単位が必要なので % を追加 */
   text-align: center;
-  font-size: 56px; /* ピクセルサイズを指定 */
+  font-size: 46px; /* ピクセルサイズを指定 */
   font-family: 'Inter', sans-serif; /* フォントの指定には適切な単位が必要ない場合もあります */
   font-weight: 580; /* 単位が不要なので '' を削除 */
 }
@@ -223,3 +223,7 @@ body {
   margin: 0 auto;
 }
 
+.copy{
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}

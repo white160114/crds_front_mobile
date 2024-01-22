@@ -5,12 +5,12 @@ import Image from 'next/image';
 
 const Detail = () => {
   const router = useRouter();
-  const { building, floor } = router.query;
+  const { building, floor , status} = router.query;
 
   return (
     <>
       <Head>
-        <title>混雑情報 - {building} {floor}</title>
+        <title>混雑情報 - {building} {floor} {status}</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
       </Head>
       <div className="container">
@@ -22,7 +22,7 @@ const Detail = () => {
         <div className="image-container">
           <Image src="/images/crds_person.jpg" alt="Floor Image" width={550} height={450} />
         </div>
-        <p>かなり混雑しています。</p>
+        <p>{status}</p>
         <footer>
           © 2023 ECC Co.,Ltd. All Rights Reserved.
         </footer>
