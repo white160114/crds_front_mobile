@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import { doc, onSnapshot } from "firebase/firestore";
 import { firestore } from "../styles/firebase";
+import styles from "../styles/Home.module.css";
 
 const Home = () => {
   const [floorsStatus, setFloorsStatus] = useState<
@@ -185,7 +186,7 @@ const Home = () => {
       </Head>
       <img src="/logo_icon.png" alt="aaa" className="title-image" />
       {/* カラーボックスと説明を表示する部分 */}
-      <div className="color-explanation">
+      <div className={styles.color_explanation}>
         <p className="situation">混雑状況</p>
 
         <div className="color-box">

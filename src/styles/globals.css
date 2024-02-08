@@ -390,12 +390,12 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-right: 20px;
 }
-.small-color-box-no-use {
+.small_color_box_no_use {
   background-color: #888282;
   height: 25px;
   width: 25px;
 }
-.color-explanation {
+.color_explanation {
   margin-top: 10px; /* ロゴと説明の間にマージンを追加 */
   display: flex;
   align-items: center;
@@ -403,7 +403,7 @@ body {
   font-weight: bold;
 }
 
-.color-box {
+.color_box {
   display: flex;
   align-items: center;
   margin-right: 0px; /* 各色ごとの説明の右にマージンを追加 */
@@ -446,7 +446,7 @@ body {
   margin-bottom: 10px; /* 各リストアイテムの間にマージンを追加（任意の値） */
 }
 
-.color-explanation-item {
+.color_explanation_item {
   font-size: 20px;
   margin-left: 5px; /* 要素間の左側のマージンを調整（適宜変更） */
 }
