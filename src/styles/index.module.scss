@@ -1,55 +1,15 @@
-.wrap {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-
-  .listBox {
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    .textBox {
-      width: 100%;
-      height: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .list {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      list-style: none;
-      gap: 2rem;
-
-      .listItem {
-        width: 20rem;
-        height: 4rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: tomato;
-        border-radius: 5px;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 430px) {
-  .wrap {
+  .color_explanation {
+    align-items: center;
+  }
+  .list_with_image {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow-y: scroll;
 
-    .listBox {
+    .floa_table_container {
       width: 50%;
       height: 100vh;
       display: flex;
@@ -57,31 +17,34 @@
       align-items: center;
       flex-direction: column;
 
+      .floa_table {
+        align-items: center;
+      }
+
+      .floa_number {
+        text-align: center;
+        font-size: medium;
+      }
+
+      .floa_text {
+        text-align: center;
+      }
+
+      .floa_button {
+        width: 20rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+
       .textBox {
         width: 100%;
         height: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-
-      .list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        list-style: none;
-        gap: 0.5rem;
-
-        .listItem {
-          width: 20rem;
-          height: 3rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: tomato;
-          border-radius: 5px;
-        }
       }
     }
   }

@@ -1,16 +1,19 @@
-// detail.tsx
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image';
 
 const Detail = () => {
   const router = useRouter();
-  const { building, floor , status} = router.query;
+  const { building, floor, status } = router.query;
+
+  // 戻るボタンがクリックされたときのハンドラ
+  const handleBackButtonClick = () => {
+    router.back(); // 前のページに遷移
+  };
 
   return (
     <>
       <Head>
-        <title>混雑情報 - {building} {floor} {status}</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
       </Head>
       <div className="container">
@@ -20,35 +23,19 @@ const Detail = () => {
           <span>{floor}</span>
         </div>
         <div className="image-container">
-          <Image src="/images/crds_person.jpg" alt="Floor Image" width={550} height={450} />
+          {/* <Image src="/images/crds_person.jpg" alt="Floor Image" width={550} height={450} /> */}
+          <Image src="http://10.200.3.88:8000/req/img/3_2F" alt="Floor Image" width={550} height={450} />
         </div>
         <p>{status}</p>
+        <div>
+          <button className='return-button' onClick={handleBackButtonClick}>
+            戻る
+          </button>
+        </div>
         <footer>
           © 2023 ECC Co.,Ltd. All Rights Reserved.
         </footer>
       </div>
-      <style jsx>{`
-        .container {
-          max-width: 600px;
-          margin: 0 auto;
-          text-align: center;
-        }
-        .main_title {
-          text-align: center;
-          margin-top: 20px;
-        }
-        .building-floor {
-          font-size: 24px;
-          margin: 20px 0;
-        }
-        .image-container {
-          margin: 20px 0;
-        }
-        footer {
-          margin-top: 20px;
-          font-size: 12px;
-        }
-      `}</style>
     </>
   );
 };

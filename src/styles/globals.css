@@ -1,155 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 body {
-  background-color: #FFFFFF; /* お好みの色に変更 */
+  background-color: #ffffff; /* お好みの色に変更 */
   /* 他のスタイルも追加できます */
 }
 /* モニター側混んでいる */
 .monitor-crowded {
-  background-color: #E55757;
+  background-color: #e55757;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: none;
   height: 5rem;
-  width: 500px;
-  margin-bottom: 10px; 
+  width: 580px;
+  margin-bottom: 0px;
   word-wrap: break-word;
   border-radius: 15px;
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
 }
 /* モニター側やや混んでいる */
 .monitor-little-crowded {
-  background-color: #FBD825;
+  background-color: #fbd825;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: none;
   height: 5rem;
-  width: 500px;
-  margin-bottom: 10px; 
+  width: 580px;
+  margin-bottom: 0px;
   word-wrap: break-word;
   border-radius: 15px; /* 角丸のサイズを指定 */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
 }
 /* モニター側空いている */
-.monitor-empty { 
-  background-color: #2EDC69;
+.monitor-empty {
+  background-color: #2edc69;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: none;
   height: 5rem;
-  width: 500px;
-  margin-bottom: 10px; 
+  width: 580px;
+  margin-bottom: 0px;
   margin-right: 10%;
   word-wrap: break-word;
   border-radius: 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   border-collapse: separate;
   border-spacing: 20px;
+  text-align: left;
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
 }
-.monitor-no-status{
+.monitor-no-status {
   background-color: white;
   color: black;
   font-size: 50px;
   font-weight: 800;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: none;
-  height: 5rem;
+  height: 6rem;
   width: 100%; /* 幅を100%に設定 */
   max-width: 750px; /* 最大幅を指定 */
-  width: 500px;
-  margin-bottom: 10px; 
+  width: 600px;
+  margin-bottom: 10px;
   word-wrap: break-word;
   border-radius: 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  padding-left: 60px;
 }
 /* モニター側利用停止 */
-.monitor-no-use{
+.monitor-no-use {
   background-color: #888282;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: none;
   height: 5rem;
   width: 100%; /* 幅を100%に設定 */
   max-width: 750px; /* 最大幅を指定 */
-  width: 500px;
-  margin-bottom: 10px; 
+  width: 580px;
+  margin-bottom: 0px;
   word-wrap: break-word;
   border-radius: 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
 }
 .main_title {
   width: 100%; /* 単位が必要なので % を追加 */
   height: 100%; /* 単位が必要なので % を追加 */
   text-align: center;
   font-size: 56px; /* ピクセルサイズを指定 */
-  font-family: 'Inter', sans-serif; /* フォントの指定には適切な単位が必要ない場合もあります */
+  font-family: "Inter", sans-serif; /* フォントの指定には適切な単位が必要ない場合もあります */
   font-weight: 580; /* 単位が不要なので '' を削除 */
 }
 .floa-number {
-  text-align: center;
+  text-align: left;
   font-size: 32px;
-  margin-left: 1000px !important; /* 左側にマージンを追加 */
-  margin-right: 100px !important;
+  padding-left: 0;
+  margin-left: 0;
   /* border-bottom: solid black; */
 }
 .floa-table {
   /* セルの間隔 */
   border-collapse: separate;
-  border-spacing: 100px 10px;
-  margin: 0 auto;
+  border-spacing: 80px 10px;
+  padding-left: 0px;
 }
 /* admin画面のデザイン */
 .admin-crowded {
-  background-color: #E55757;
+  background-color: #e55757;
   color: white;
   font-size: 50px;
   font-weight: 800;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: none;
   height: 5rem;
   width: 600px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   word-wrap: break-word;
   border-radius: 15px;
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 /* モニター側やや混んでいる */
 .admin-little-crowded {
-  background-color: #FBD825;
+  background-color: #fbd825;
   color: white;
   font-size: 50px;
   font-weight: 800;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: none;
   height: 5rem;
   width: 600px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   word-wrap: break-word;
   border-radius: 15px; /* 角丸のサイズを指定 */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 /* モニター側空いている */
-.admin-empty { 
-  background-color: #2EDC69;
+.admin-empty {
+  background-color: #2edc69;
   color: white;
   font-size: 50px;
   font-weight: 800;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: none;
   height: 5rem;
   width: 600px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   margin-right: 10%;
   word-wrap: break-word;
   border-radius: 15px;
@@ -158,51 +176,51 @@ body {
   border-spacing: 20px;
 }
 /* モニター側利用停止 */
-.admin-no-use{
+.admin-no-use {
   background-color: #888282;
   color: white;
   font-size: 50px;
   font-weight: 800;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: none;
   height: 5rem;
   width: 100%; /* 幅を100%に設定 */
   max-width: 750px; /* 最大幅を指定 */
   width: 600px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   word-wrap: break-word;
   border-radius: 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-.admin-AI-on{
-  background-color: #6ABAF4;
+.admin-AI-on {
+  background-color: #6abaf4;
   color: white;
   font-size: 50px;
   font-weight: 800;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: none;
   height: 5rem;
   width: 100%; /* 幅を100%に設定 */
   max-width: 750px; /* 最大幅を指定 */
   width: 290px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   word-wrap: break-word;
   border-radius: 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-right: 20px;
 }
-.admin-AI-off{
-  background-color: #6ABAF4;
+.admin-AI-off {
+  background-color: #6abaf4;
   color: white;
   font-size: 50px;
   font-weight: 800;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: none;
   height: 5rem;
   width: 100%; /* 幅を100%に設定 */
   max-width: 750px; /* 最大幅を指定 */
   width: 290px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   word-wrap: break-word;
   border-radius: 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -213,7 +231,7 @@ body {
   height: 100%; /* 単位が必要なので % を追加 */
   text-align: center;
   font-size: 46px; /* ピクセルサイズを指定 */
-  font-family: 'Inter', sans-serif; /* フォントの指定には適切な単位が必要ない場合もあります */
+  font-family: "Inter", sans-serif; /* フォントの指定には適切な単位が必要ない場合もあります */
   font-weight: 580; /* 単位が不要なので '' を削除 */
 }
 .admin-table {
@@ -223,7 +241,313 @@ body {
   margin: 0 auto;
 }
 
-.copy{
+.copy {
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+.master-edit-table {
+  border-collapse: separate;
+  border-spacing: 50px 10px;
+  margin: 0 auto;
+}
+
+.add-button {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 46px;
+  font-family: "Inter", sans-serif;
+  font-weight: 750;
+}
+
+.master-tr {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.master-list {
+  border-collapse: separate;
+  border-spacing: 50px 10px;
+  margin: 0 auto;
+}
+
+.th {
+  border-collapse: separate;
+  margin: 0 auto;
+}
+
+.building-floor {
+  font-size: 28px;
+  margin: 20px 0;
+  font-weight: 750;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 中央揃えから左揃えに変更 */
+  margin-right: 80px;
+  margin-bottom: 80px;
+  margin-left: 0; /* 左側のマージンを追加して調整する */
+}
+.footer {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.return-button {
+  background-color: #0095ff;
+  color: white;
+  font-size: 32px;
+  font-weight: 800;
+  font-family: "Inter";
+  border: none;
+  height: 3rem;
+  width: 200px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  border-radius: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-right: 20px;
+}
+.master-table-number {
+  text-align: center;
+  font-size: 36px;
+  text-align: center;
+}
+.master-table {
+  font-size: 28px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+.master-admin-button {
+  margin-left: auto; /* 右寄せ */
+  background-color: #15e1a7;
+  color: white;
+  font-size: 32px;
+  font-weight: 800;
+  font-family: "Inter";
+  border: none;
+  height: 3rem;
+  width: 200px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  border-radius: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-right: 20px;
+}
+.master-delete-button {
+  margin-left: auto; /* 右寄せ */
+  background-color: #a30000;
+  color: white;
+  font-size: 32px;
+  font-weight: 800;
+  font-family: "Inter";
+  border: none;
+  height: 3rem;
+  width: 200px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  border-radius: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-right: 20px;
+}
+.test-1 {
+  background-color: #6abaf4;
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Inter";
+  border: none;
+  height: 5rem;
+  width: 100%; /* 幅を100%に設定 */
+  max-width: 750px; /* 最大幅を指定 */
+  width: 290px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  border-radius: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-right: 20px;
+}
+.test-2 {
+  background-color: #6abaf4;
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Inter";
+  border: none;
+  height: 5rem;
+  width: 100%; /* 幅を100%に設定 */
+  max-width: 750px; /* 最大幅を指定 */
+  width: 290px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  border-radius: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-right: 20px;
+}
+.small-color-box-no-use {
+  background-color: #888282;
+  height: 25px;
+  width: 25px;
+}
+.color-explanation {
+  margin-top: 10px; /* ロゴと説明の間にマージンを追加 */
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.color-box {
+  display: flex;
+  align-items: center;
+  margin-right: 0px; /* 各色ごとの説明の右にマージンを追加 */
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.small-color-box {
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  margin-right: 0px;
+}
+
+.small-color-box-no-use {
+  background-color: #888282;
+}
+.small-color-box-crowded {
+  background-color: #e55757;
+}
+.small-color-box-little-crowded {
+  background-color: #fbd825;
+}
+.small-color-box-empty {
+  background-color: #2edc69;
+}
+.situation {
+  padding-left: 60px;
+}
+.title-image {
+  padding-left: 70px;
+}
+.floa-list {
+  list-style: none; /* リストの点を非表示にする */
+  padding: 0; /* デフォルトのパディングを削除 */
+}
+
+.floa-list li {
+  margin-bottom: 10px; /* 各リストアイテムの間にマージンを追加（任意の値） */
+}
+
+.color-explanation-item {
+  font-size: 20px;
+  margin-left: 5px; /* 要素間の左側のマージンを調整（適宜変更） */
+}
+.situation {
+  font-size: 20px;
+  margin-left: 30px;
+}
+.title-image {
+  margin-left: 20px;
+}
+.floor-text {
+  margin-right: 5px; /* floor とアイコンの間に適切なスペースを設ける */
+}
+.status-icon {
+  margin-left: 350px; /* 右寄せにする */
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Inter";
+  width: 50px;
+  height: 50px;
+}
+.img-icon {
+  width: 50px;
+  height: 50px;
+}
+.floor-table-container {
+  display: inline-block;
+  margin-right: 50px; /* テーブルと画像の間隔を調整 */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 80px;
+  margin-bottom: 80px;
+}
+
+.floor-image {
+  width: 650px;
+  height: 365.5px;
+}
+.image-with-text {
+  position: relative;
+}
+
+.image-text {
+  text-align: center;
+}
+
+.image-text p {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.image-text img {
+  display: block;
+  margin-bottom: 5px; /* 画像間の余白を調整 */
+}
+.work-number {
+  width: 97.5px;
+  height: 97.5px;
+}
+.catch-copy {
+  width: 432.5px;
+  height: 97.5px;
+  padding-right: 120px;
+}
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.work-number {
+  display: inline-block;
+  margin: 0;
+  height: auto;
+  object-fit: cover;
+}
+.catch-copy {
+  display: inline-block;
+  margin: 0;
+  height: auto;
+}
+.text-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* 必要に応じて高さを指定 */
+}
+.list-with-image {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px; /* リストと画像の間隔を調整 */
+}
+
+.floor-table-container {
+  flex-grow: 1; /* リストを伸縮させて画像と並ぶようにする */
+  margin-right: 20px;
+  margin-left: 0;
 }
